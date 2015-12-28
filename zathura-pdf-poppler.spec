@@ -1,11 +1,11 @@
 Summary:	poppler based PDF plugin for zathura
 Name:		zathura-pdf-poppler
-Version:	0.2.5
-Release:	2
+Version:	0.2.6
+Release:	1
 License:	BSD-like
 Group:		Applications/Publishing
 Source0:	https://pwmt.org/projects/zathura/plugins/download/%{name}-%{version}.tar.gz
-# Source0-md5:	e314b8b136e71aa4925a864141f12d15
+# Source0-md5:	fc242236dda05f4a75cb41b52356ccae
 URL:		http://pwmt.org/projects/zathura/plugins/zathura-pdf-poppler
 BuildRequires:	cairo-devel
 BuildRequires:	girara-devel >= 0.1.8
@@ -43,3 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc LICENSE
 %attr(755,root,root) %{_libdir}/zathura/pdf.so
 %{_desktopdir}/%{name}.desktop
+%{_datadir}/appdata/zathura-pdf-poppler.metainfo.xml

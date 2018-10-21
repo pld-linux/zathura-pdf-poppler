@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	poppler-glib-devel >= 0.18
 BuildRequires:	rpmbuild(macros) >= 1.727
 BuildRequires:	zathura-devel >= 0.3.9
+Requires(post,postun):	desktop-file-utils
 Requires:	girara >= 0.1.8
 Requires:	gtk+3 >= 3.2
 Requires:	poppler-glib >= 0.18
@@ -48,6 +49,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%update_desktop_database_post
+
+%postun
+%update_desktop_database_postun
 
 %files
 %defattr(644,root,root,755)

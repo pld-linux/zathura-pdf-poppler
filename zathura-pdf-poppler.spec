@@ -5,7 +5,7 @@ Version:	0.2.9
 Release:	1
 License:	BSD-like
 Group:		Applications/Publishing
-Source0:	https://pwmt.org/projects/zathura-pdf-poppler/%{name}-%{version}.tar.xz
+Source0:	https://pwmt.org/projects/zathura-pdf-poppler/download/%{name}-%{version}.tar.xz
 # Source0-md5:	d0eafd167baa2521fcf572fcf66cb396
 URL:		https://pwmt.org/projects/zathura/zathura-pdf-poppler/
 BuildRequires:	cairo-devel

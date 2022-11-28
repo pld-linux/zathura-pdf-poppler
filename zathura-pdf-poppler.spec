@@ -18,6 +18,8 @@ BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	poppler-glib-devel >= 0.18
 BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 BuildRequires:	zathura-devel >= 0.5.2
 Requires(post,postun):	desktop-file-utils
 Requires:	girara >= 0.1.8

@@ -9,7 +9,7 @@ Source0:	https://pwmt.org/projects/zathura-pdf-poppler/download/%{name}-%{versio
 # Source0-md5:	d91018be0282c09a1e84d83b9fdc08b9
 URL:		https://pwmt.org/projects/zathura/zathura-pdf-poppler/
 BuildRequires:	cairo-devel
-# C11
+# C17
 BuildRequires:	gcc >= 6:8.1
 BuildRequires:	girara-devel >= 0.1.8
 BuildRequires:	gtk+3-devel >= 3.2

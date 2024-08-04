@@ -1,3 +1,6 @@
+%define		_zathura_api_ver	%(pkg-config --variable=apiversion zathura)
+%define		_zathura_abi_ver	%(pkg-config --variable=abiversion zathura)
+
 Summary:	poppler based PDF plugin for zathura
 Summary(pl.UTF-8):	Wtyczka PDF do zathury oparta na bibliotece poppler
 Name:		zathura-pdf-poppler
@@ -26,6 +29,8 @@ Requires:	girara >= 0.1.8
 Requires:	gtk+3 >= 3.2
 Requires:	poppler-glib >= 21.12
 Requires:	zathura >= 0.5.3
+Requires:	zathura(plugin-abi) = %_zathura_abi_ver
+Requires:	zathura(plugin-api) = %_zathura_api_ver
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

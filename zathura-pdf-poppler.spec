@@ -20,7 +20,7 @@ BuildRequires:	meson >= 0.61
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	poppler-glib-devel >= 21.12
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	zathura-devel >= 0.5.3

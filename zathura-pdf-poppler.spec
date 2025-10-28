@@ -31,6 +31,7 @@ Requires:	poppler-glib >= 21.12
 Requires:	zathura >= 0.5.3
 Requires:	zathura(plugin-abi) = %_zathura_abi_ver
 Requires:	zathura(plugin-api) = %_zathura_api_ver
+Conflicts:	zathura-pdf-mupdf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
